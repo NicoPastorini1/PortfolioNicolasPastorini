@@ -1,0 +1,44 @@
+<section class="vh-100 fondo">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+              <h3 class="mb-2">Iniciar sesion</h3>
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                
+                <!-- se pide llenar el campo "usuario"-->
+                <div class="form-outline mb-2">
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+                  <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required/>
+                </div>
+                
+                <!-- se pide llenar el campo "contraseña"-->
+                <div class="form-outline mb-2">
+                  <label class="form-label" for="password">Password</label>  
+                  <input type="password" id="password" name="passowrd" class="form-control form-control-lg" [(ngModel)]="password" required/>     
+                </div>
+
+                <!-- Checkbox --> 
+                <div class="form-check d-flex justify-content-start mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                  <label class="form-check-label" style="padding-left: 5px;" for="form1Example3">Recordar contraseña</label>
+                </div>
+
+                <!-- Botones de navegación -->
+                <div class="col">
+                  <button class="btn btn-secondary btn-lg btn-block float-start" routerLink="" href="/">Volver</button>
+                  <!-- Botones de enviar -->
+                  <button class="btn btn-primary btn-lg btn-block float-end" type="submit">Ingresar</button><br>
+                </div> 
+                <div class="col pt-5">
+                  <a href="">¿No tienes una cuenta aún? Registrate</a>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

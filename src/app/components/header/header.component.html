@@ -1,0 +1,34 @@
+<div class="component-nav">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid text-align">
+        <div class="col navp">
+          <div class="col">
+            <img src="https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png" height="50px" weight="50px" alt="">
+          </div>
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <a class="nav-text texto" aria-current="page" href="#">Inicio</a>
+            </div>
+            <div class="col-auto">
+              <a class="nav-text texto" href="#">Acerca de</a>
+            </div>
+            <div class="col-auto">
+              <a class="nav-text texto" href="#">Experiencia</a>
+            </div>
+            <div class="col-auto">
+              <a class="nav-text texto" href="#">Educacion</a>
+            </div>
+            <div class="col-auto">
+              <a class="nav-text texto" href="#">Skills</a>
+            </div>
+            <div class="col-auto">
+              <button type="button" class="btn btn-outline-success2 texto pl-3" (click)="login()" *ngIf="!isLogged">Iniciar sesion</button>
+            </div>
+            <div class="col-auto">
+              <button type="button" class="btn btn-outline-success2 texto"  (click)="onLogOut()" *ngIf="isLogged">Cerrar sesion</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </nav>
+</div>
